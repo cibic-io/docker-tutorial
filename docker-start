@@ -1,0 +1,6 @@
+#! /bin/sh
+
+docker-compose -f docker-compose.yml -f docker/docker-compose.once.yml down
+docker-compose -f docker-compose.yml -f docker/docker-compose.once.yml up
+#-d && \
+#docker attach $(docker ps -q | head -1)
